@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/ivItem"
+        android:text="rating"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvDescription"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/ivItem"
+        android:text="Price"
+        android:textSize="16sp"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_below="@+id/tvItemName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:layout_toEndOf="@+id/ivItem"
+        android:text="asdfasdfasdjkhflk sadfjsahdfk djhfjkldhf laskjdfh alskdjfh asljdhf lsadkjhf alskjdh alsdjkhf laskjdhf alsdj asljd falsdfk h" />
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/ivItem"
+        android:fontFamily="sans-serif-black"
+        android:text="name"
+        android:textColor="#E4555454"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ibComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/ic_baseline_comment_24" />
+
+</RelativeLayout>

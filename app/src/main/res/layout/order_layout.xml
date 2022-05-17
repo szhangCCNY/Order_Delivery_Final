@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/OrderItemContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvOrderDeliveryMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DeliveryMethod"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvOrderCustName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#101010"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvOrderCustAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/tvOrderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:textColor="#F44336" />
+
+    <TextView
+        android:id="@+id/tvOrderPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="total cost"
+        android:textColor="#009688" />
+
+    <TextView
+        android:id="@+id/tvAssignTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assigned To + Reasoning:"
+        android:textColor="#3F51B5" />
+
+    <TextView
+        android:id="@+id/tvEmployeeResp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EmployeeResponsible"
+        android:textColor="#CD1305" />
+
+</LinearLayout>

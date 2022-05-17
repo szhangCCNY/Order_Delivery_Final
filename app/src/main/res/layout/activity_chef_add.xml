@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etAddItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Item Name..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etAddItemDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etAddItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Set Price..."
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCaptureImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Take picture" />
+
+    <ImageView
+        android:id="@+id/ivAddItemImage"
+        android:layout_width="194dp"
+        android:layout_height="196dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnSubmitItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#D0C9D5"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

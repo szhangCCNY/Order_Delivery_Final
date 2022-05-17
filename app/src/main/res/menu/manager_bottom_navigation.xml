@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_man_cust"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="customer"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_man_employ"
+        android:icon="@drawable/ic_baseline_supervisor_account_24"
+        android:title="Employee"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_man_deli"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Current Orders"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_man_message"
+        android:icon="@drawable/ic_baseline_markunread_24"
+        android:title="Notification"
+        app:showAsAction="always" />
+</menu>

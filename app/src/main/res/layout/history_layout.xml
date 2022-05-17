@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlHistoryItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6496C8">
+
+    <TextView
+        android:id="@+id/tvHistoryItemNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:text="History Item Num"
+        android:textColor="#263487"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHistoryItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHistoryItemNum"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="History item list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHistoryItemNum" />
+
+    <ImageButton
+        android:id="@+id/ibThumbsUp"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/tvEmployeeResponsible"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/ibThumbsDown"
+        android:background="#4CAF50"
+        app:layout_constraintEnd_toStartOf="@+id/ibThumbsDown"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmployeeResponsible"
+        app:srcCompat="@drawable/ic_baseline_thumb_up_24" />
+
+    <ImageButton
+        android:id="@+id/ibThumbsDown"
+        android:layout_width="35dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/tvEmployeeResponsible"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#E61010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmployeeResponsible"
+        app:srcCompat="@drawable/ic_baseline_thumb_down_24" />
+
+    <TextView
+        android:id="@+id/tvDeliveryMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHistoryItemList"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Delivery Method"
+        app:layout_constraintTop_toBottomOf="@+id/tvHistoryItemList"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <TextView
+        android:id="@+id/tvEmployeeResponsible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDeliveryMethod"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Employee Responsible"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeliveryMethod"
+        tools:layout_editor_absoluteX="166dp" />
+</RelativeLayout>
